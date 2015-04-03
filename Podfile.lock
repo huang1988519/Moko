@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworkActivityLogger (2.0.4):
+    - AFNetworking/NSURLConnection (~> 2.0)
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.5.1):
+    - AFNetworking/NSURLConnection (= 2.5.1)
+    - AFNetworking/NSURLSession (= 2.5.1)
+    - AFNetworking/Reachability (= 2.5.1)
+    - AFNetworking/Security (= 2.5.1)
+    - AFNetworking/Serialization (= 2.5.1)
+    - AFNetworking/UIKit (= 2.5.1)
+  - AFNetworking/NSURLConnection (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.1)
+  - AFNetworking/Security (2.5.1)
+  - AFNetworking/Serialization (2.5.1)
+  - AFNetworking/UIKit (2.5.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - hpple (0.2.0)
+  - SACollectionViewVerticalScalingFlowLayout (1.0.0)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - SVPullToRefresh (0.4.1)
+  - XHImageViewer (0.1.2)
+  - XHTwitterPaggingViewer (0.7)
+
+DEPENDENCIES:
+  - AFNetworkActivityLogger (~> 2.0.4)
+  - AFNetworking (~> 2.5.1)
+  - hpple (~> 0.2.0)
+  - SACollectionViewVerticalScalingFlowLayout (~> 1.0.0)
+  - SDWebImage (~> 3.7.1)
+  - SVPullToRefresh
+  - XHImageViewer
+  - XHTwitterPaggingViewer
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: cdaa92ea0d544835babe0ba097e7806182d8f837
+  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  hpple: f4eb7c21a8db83ec264e5d614ec7509e10e5adec
+  SACollectionViewVerticalScalingFlowLayout: b20bec66cb29e98935dd72b7b096777649ab423e
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
+  XHImageViewer: 84bcadb6d07a0040d2c7ac2e6ceb05df970da165
+  XHTwitterPaggingViewer: 42168c2f8e0983af6a44d0d20e9e15c54a4847dd
+
+COCOAPODS: 0.36.1

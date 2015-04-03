@@ -1,0 +1,6 @@
+#include "Pods-Moko-AFNetworking.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AFNetworking" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworkActivityLogger" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/SACollectionViewVerticalScalingFlowLayout" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/SVPullToRefresh" "${PODS_ROOT}/Headers/Public/XHImageViewer" "${PODS_ROOT}/Headers/Public/XHTwitterPaggingViewer" "${PODS_ROOT}/Headers/Public/hpple"
+OTHER_LDFLAGS = ${PODS_MOKO_AFNETWORKING_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
