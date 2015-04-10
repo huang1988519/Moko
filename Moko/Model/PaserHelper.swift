@@ -19,7 +19,7 @@ class PaserHelper: NSObject{
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
 
             if state==0{//sucess
-                var data = respond as NSData
+                var data = respond as! NSData
                 var doc  = TFHpple(HTMLData: data)
 
                 if let _temp=doc{

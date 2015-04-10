@@ -26,13 +26,12 @@ class Network: NSObject,NSURLConnectionDataDelegate {
         
         _sucessBlock = sucessHander
     }
-    
-    func connection(connection: NSURLConnection, didReceiveResponse response: NSHTTPURLResponse) {
-
-        _responseState = response
+    func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
+        _responseState = response as? NSHTTPURLResponse
         println("respond:\(_responseState)")
         receiveData = NSMutableData()
     }
+    
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
         receiveData?.appendData(data)
     }

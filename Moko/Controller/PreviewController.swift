@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import GoogleMobileAds
+class PreviewController: UIViewController ,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
 
-class PreviewController: UIViewController ,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,XHImageViewerDelegate{
-
+    @IBOutlet var bannerView: GADBannerView!
+    
     var path:String!
     var resultArray = [TFHppleElement]()
 
@@ -17,6 +19,13 @@ class PreviewController: UIViewController ,UICollectionViewDataSource,UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "列表"
+        
+        self.bannerView.adUnitID = "ca-app-pub-9740809110396658/1151923524"
+        self.bannerView.rootViewController = self
+        var deviceRequest:GADRequest = GADRequest()
+        deviceRequest.testDevices = ["59dacc3883b1287897acd50d68a2617275d9b323"]
+        self.bannerView.loadRequest(deviceRequest)
         
         request()
     }
@@ -25,7 +34,7 @@ class PreviewController: UIViewController ,UICollectionViewDataSource,UICollecti
         PaserHelper.getHtmlNodes("\(path)",parser: Constants.parserString.previewParser, sucessBlock: { (respondData, state) -> () in
             println(respondData)
             self.resultArray.removeAll(keepCapacity: false)
-            var array = respondData as [TFHppleElement]
+            var array = respondData as! [TFHppleElement]
             self.resultArray+=array
             
             self.collectionView.reloadData()
@@ -33,9 +42,10 @@ class PreviewController: UIViewController ,UICollectionViewDataSource,UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as PreviewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! PreviewCell
+        cell.imageView.image = nil
         var element = resultArray[indexPath.row]
-        cell.imageView.loadWithURL(NSURL(string: element.attributes["src2"] as String), placeholer: nil, showActivityIndicatorView: true)
+        cell.imageView.loadWithURL(NSURL(string: element.attributes["src2"] as! String), placeholer: nil, showActivityIndicatorView: true)
         return cell
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,11 +58,15 @@ class PreviewController: UIViewController ,UICollectionViewDataSource,UICollecti
         return size
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        var cell = collectionView.cellForItemAtIndexPath(indexPath) as PreviewCell
+        var cell = collectionView.cellForItemAtIndexPath(indexPath) as! PreviewCell
         
-        var viewer =  XHImageViewer()
-        viewer.delegate = self
-        viewer.showWithImageViews([cell.imageView], selectedView: cell.imageView)
+        var ivc:ESImageViewController = ESImageViewController()
+        ivc.closeButton.hidden = false
+        ivc.tappedThumbnail = cell.imageView
+        ivc.image = cell.imageView.image
+        self.presentViewController(ivc, animated: true) { () -> Void in
+            
+        }
+        
     }
-
 }

@@ -10,3 +10,5 @@
 #import <SACollectionViewVerticalScalingCell.h>
 #import <UIImageView+XHURLDownload.h>
 #import <XHImageViewer.h>
+
+#import "ESImageViewController.h"

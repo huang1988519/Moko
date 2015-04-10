@@ -12,6 +12,19 @@
 		D92449ED1ACD1F5E005D1AB7 /* FlipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92449EC1ACD1F5E005D1AB7 /* FlipCell.swift */; };
 		D98A1B811ACD420900FB4635 /* PreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A1B801ACD420900FB4635 /* PreviewController.swift */; };
 		D98A1B831ACD496D00FB4635 /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A1B821ACD496D00FB4635 /* PreviewCell.swift */; };
+		D9A0BE551AD6A518008109A1 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A0BE541AD6A518008109A1 /* GoogleMobileAds.framework */; };
+		D9F183D91AD660F800F3B084 /* ESImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F183D61AD660F800F3B084 /* ESImageViewController.m */; };
+		D9F183DA1AD660F800F3B084 /* ESModalImageViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F183D81AD660F800F3B084 /* ESModalImageViewAnimationController.m */; };
+		D9F183DF1AD699D500F3B084 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183DD1AD699D500F3B084 /* EventKit.framework */; };
+		D9F183E01AD699D500F3B084 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183DE1AD699D500F3B084 /* EventKitUI.framework */; };
+		D9F183E21AD699DC00F3B084 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183E11AD699DC00F3B084 /* StoreKit.framework */; };
+		D9F183E41AD699E200F3B084 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183E31AD699E200F3B084 /* MessageUI.framework */; };
+		D9F183E61AD699E800F3B084 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183E51AD699E800F3B084 /* CoreTelephony.framework */; };
+		D9F183E81AD699EF00F3B084 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183E71AD699EF00F3B084 /* CoreGraphics.framework */; };
+		D9F183EA1AD699F900F3B084 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183E91AD699F900F3B084 /* AudioToolbox.framework */; };
+		D9F183EC1AD699FF00F3B084 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183EB1AD699FF00F3B084 /* AVFoundation.framework */; };
+		D9F183EE1AD69A0400F3B084 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183ED1AD69A0400F3B084 /* CFNetwork.framework */; };
+		D9F183F01AD69A0900F3B084 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F183EF1AD69A0900F3B084 /* AdSupport.framework */; };
 		D9F76C5D1ACA748D007C92CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F76C5C1ACA748D007C92CB /* AppDelegate.swift */; };
 		D9F76C5F1ACA748D007C92CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F76C5E1ACA748D007C92CB /* ViewController.swift */; };
 		D9F76C621ACA748D007C92CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F76C601ACA748D007C92CB /* Main.storyboard */; };
@@ -42,6 +55,22 @@
 		D92449EC1ACD1F5E005D1AB7 /* FlipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipCell.swift; sourceTree = "<group>"; };
 		D98A1B801ACD420900FB4635 /* PreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewController.swift; sourceTree = "<group>"; };
 		D98A1B821ACD496D00FB4635 /* PreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
+		D9A0BE541AD6A518008109A1 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Moko/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D9F183D41AD660F800F3B084 /* ESImageViewController-Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESImageViewController-Internals.h"; sourceTree = "<group>"; };
+		D9F183D51AD660F800F3B084 /* ESImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESImageViewController.h; sourceTree = "<group>"; };
+		D9F183D61AD660F800F3B084 /* ESImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESImageViewController.m; sourceTree = "<group>"; };
+		D9F183D71AD660F800F3B084 /* ESModalImageViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESModalImageViewAnimationController.h; sourceTree = "<group>"; };
+		D9F183D81AD660F800F3B084 /* ESModalImageViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESModalImageViewAnimationController.m; sourceTree = "<group>"; };
+		D9F183DD1AD699D500F3B084 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		D9F183DE1AD699D500F3B084 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		D9F183E11AD699DC00F3B084 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D9F183E31AD699E200F3B084 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D9F183E51AD699E800F3B084 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D9F183E71AD699EF00F3B084 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9F183E91AD699F900F3B084 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D9F183EB1AD699FF00F3B084 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9F183ED1AD69A0400F3B084 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D9F183EF1AD69A0900F3B084 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D9F76C571ACA748D007C92CB /* Moko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F76C5B1ACA748D007C92CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F76C5C1ACA748D007C92CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +91,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F183F01AD69A0900F3B084 /* AdSupport.framework in Frameworks */,
+				D9F183EE1AD69A0400F3B084 /* CFNetwork.framework in Frameworks */,
+				D9F183EC1AD699FF00F3B084 /* AVFoundation.framework in Frameworks */,
+				D9F183EA1AD699F900F3B084 /* AudioToolbox.framework in Frameworks */,
+				D9F183E81AD699EF00F3B084 /* CoreGraphics.framework in Frameworks */,
+				D9F183E61AD699E800F3B084 /* CoreTelephony.framework in Frameworks */,
+				D9A0BE551AD6A518008109A1 /* GoogleMobileAds.framework in Frameworks */,
+				D9F183E41AD699E200F3B084 /* MessageUI.framework in Frameworks */,
+				D9F183E21AD699DC00F3B084 /* StoreKit.framework in Frameworks */,
+				D9F183DF1AD699D500F3B084 /* EventKit.framework in Frameworks */,
+				D9F183E01AD699D500F3B084 /* EventKitUI.framework in Frameworks */,
 				DC8756C66949A7F94AD65E9C /* libPods-Moko.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +119,17 @@
 		2123F73A9E5FDEA69AD92C63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9A0BE541AD6A518008109A1 /* GoogleMobileAds.framework */,
+				D9F183EF1AD69A0900F3B084 /* AdSupport.framework */,
+				D9F183ED1AD69A0400F3B084 /* CFNetwork.framework */,
+				D9F183EB1AD699FF00F3B084 /* AVFoundation.framework */,
+				D9F183E91AD699F900F3B084 /* AudioToolbox.framework */,
+				D9F183E71AD699EF00F3B084 /* CoreGraphics.framework */,
+				D9F183E51AD699E800F3B084 /* CoreTelephony.framework */,
+				D9F183E31AD699E200F3B084 /* MessageUI.framework */,
+				D9F183E11AD699DC00F3B084 /* StoreKit.framework */,
+				D9F183DD1AD699D500F3B084 /* EventKit.framework */,
+				D9F183DE1AD699D500F3B084 /* EventKitUI.framework */,
 				72DB89F015771FFA357F4166 /* libPods-Moko.a */,
 			);
 			name = Frameworks;
@@ -187,6 +238,11 @@
 		D9F76C7D1ACA7595007C92CB /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D9F183D41AD660F800F3B084 /* ESImageViewController-Internals.h */,
+				D9F183D51AD660F800F3B084 /* ESImageViewController.h */,
+				D9F183D61AD660F800F3B084 /* ESImageViewController.m */,
+				D9F183D71AD660F800F3B084 /* ESModalImageViewAnimationController.h */,
+				D9F183D81AD660F800F3B084 /* ESModalImageViewAnimationController.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -250,6 +306,7 @@
 				TargetAttributes = {
 					D9F76C561ACA748D007C92CB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = GW7ZRB8ABG;
 					};
 					D9F76C6B1ACA748D007C92CB = {
 						CreatedOnToolsVersion = 6.2;
@@ -334,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F183D91AD660F800F3B084 /* ESImageViewController.m in Sources */,
 				D98A1B831ACD496D00FB4635 /* PreviewCell.swift in Sources */,
 				D98A1B811ACD420900FB4635 /* PreviewController.swift in Sources */,
 				D9F76C5F1ACA748D007C92CB /* ViewController.swift in Sources */,
@@ -341,6 +399,7 @@
 				D9F76C841ACA7645007C92CB /* MenuController.swift in Sources */,
 				D91E83B51ACABEC90055B974 /* Network.swift in Sources */,
 				D9F76C5D1ACA748D007C92CB /* AppDelegate.swift in Sources */,
+				D9F183DA1AD660F800F3B084 /* ESModalImageViewAnimationController.m in Sources */,
 				D9F76C861ACA8642007C92CB /* Contants.swift in Sources */,
 				D91E83B21ACA8EBF0055B974 /* PaserHelper.swift in Sources */,
 			);
@@ -466,11 +525,20 @@
 			baseConfigurationReference = D2FCAEF935D2E94D9CE03C7A /* Pods-Moko.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Moko/Library",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Moko",
+				);
 				INFOPLIST_FILE = Moko/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a2dfccae-f0f2-4556-a113-fff02540f222";
 				SWIFT_OBJC_BRIDGING_HEADER = "Moko/Library/Moko-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -481,11 +549,21 @@
 			baseConfigurationReference = BCE665A5A4D79212F982AB53 /* Pods-Moko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jiabin Li (GW7ZRB8ABG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jiabin Li (GW7ZRB8ABG)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Moko/Library",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Moko",
+				);
 				INFOPLIST_FILE = Moko/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a2dfccae-f0f2-4556-a113-fff02540f222";
 				SWIFT_OBJC_BRIDGING_HEADER = "Moko/Library/Moko-Bridging-Header.h";
 			};
 			name = Release;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J8W-YL-9JW">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.97333829365079361" green="0.97333829365079361" blue="0.97333829365079361" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="Gif-gU-NNQ">
                                     <size key="itemSize" width="250" height="250"/>
@@ -61,12 +61,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J8W-YL-9JW" secondAttribute="bottom" id="Exh-Wc-rTS"/>
-                            <constraint firstItem="J8W-YL-9JW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Jxv-0M-VTA"/>
-                            <constraint firstItem="J8W-YL-9JW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="VNO-lR-POf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="J8W-YL-9JW" secondAttribute="trailing" constant="-16" id="YDo-Zb-rDL"/>
+                            <constraint firstItem="J8W-YL-9JW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="AQb-6F-b9N"/>
+                            <constraint firstItem="J8W-YL-9JW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="a1I-B1-QWJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J8W-YL-9JW" secondAttribute="bottom" id="h1a-ai-Ebg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J8W-YL-9JW" secondAttribute="trailing" constant="-16" id="us3-jg-0xz"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionView" destination="J8W-YL-9JW" id="s7r-d4-EeY"/>
                     </connections>
@@ -84,11 +87,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Rem-P2-e6s"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z69-If-Tn1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-jm-3qy" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zIA-XL-HtC"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eIO-k5-jMk">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="511"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V2a-JL-UPy">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -128,13 +138,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="eIO-k5-jMk" secondAttribute="trailing" constant="-16" id="1HZ-qZ-K7I"/>
-                            <constraint firstItem="eIO-k5-jMk" firstAttribute="leading" secondItem="Z69-If-Tn1" secondAttribute="leadingMargin" constant="-16" id="GB3-D9-eh2"/>
-                            <constraint firstItem="eIO-k5-jMk" firstAttribute="top" secondItem="Z69-If-Tn1" secondAttribute="topMargin" id="H4d-4a-ZSM"/>
-                            <constraint firstItem="Rem-P2-e6s" firstAttribute="top" secondItem="eIO-k5-jMk" secondAttribute="bottom" id="XUE-bf-Cda"/>
+                            <constraint firstItem="o9V-jm-3qy" firstAttribute="leading" secondItem="Z69-If-Tn1" secondAttribute="leadingMargin" constant="-16" id="2BE-Nr-jrz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eIO-k5-jMk" secondAttribute="trailing" constant="-16" id="8aI-Jc-lg5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o9V-jm-3qy" secondAttribute="trailing" constant="-16" id="9DB-Yg-pUI"/>
+                            <constraint firstItem="Rem-P2-e6s" firstAttribute="top" secondItem="o9V-jm-3qy" secondAttribute="bottom" constant="2" id="Hpq-cO-Ro6"/>
+                            <constraint firstItem="eIO-k5-jMk" firstAttribute="top" secondItem="Z69-If-Tn1" secondAttribute="topMargin" id="LvD-5u-DB7"/>
+                            <constraint firstItem="Rem-P2-e6s" firstAttribute="top" secondItem="o9V-jm-3qy" secondAttribute="bottom" id="QAE-FB-Uij"/>
+                            <constraint firstItem="o9V-jm-3qy" firstAttribute="top" secondItem="eIO-k5-jMk" secondAttribute="bottom" constant="-3" id="TnW-vR-Fcd"/>
+                            <constraint firstItem="o9V-jm-3qy" firstAttribute="top" secondItem="eIO-k5-jMk" secondAttribute="bottom" constant="8" id="UEj-Pj-BUU"/>
+                            <constraint firstItem="eIO-k5-jMk" firstAttribute="leading" secondItem="Z69-If-Tn1" secondAttribute="leadingMargin" constant="-16" id="Y0l-4m-E6r"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UEj-Pj-BUU"/>
+                                <exclude reference="Hpq-cO-Ro6"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="o9V-jm-3qy" id="gG0-LK-USe"/>
                         <outlet property="collectionView" destination="eIO-k5-jMk" id="WJI-4s-iUb"/>
                     </connections>
                 </viewController>

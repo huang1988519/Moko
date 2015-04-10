@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var bannerView:GADBannerView?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        
         
         //打开网络请求日志 
         AFNetworkActivityLogger.sharedLogger().startLogging()
@@ -22,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         //menu controller
-        var menuCtrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("menu") as MenuController
+        var menuCtrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("menu") as! MenuController
         //root controller
         var rootController:XHTwitterPaggingViewer = XHTwitterPaggingViewer(leftViewController: menuCtrl)
         
@@ -32,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var index:Int = 0
         var controllers = [ViewController]()
         for title in titles{
-            var mainCtrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("mainID") as ViewController
+            var mainCtrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("mainID") as! ViewController
             mainCtrl.title = title
             mainCtrl.path  = paths[index]
             controllers.append(mainCtrl)
@@ -44,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rootController.didChangedPageCompleted = { (page:NSInteger,title:String!) in
             debugPrintln("\(title) at \(page)")
             
-            var ctrl = rootController.viewControllers[page] as ViewController
+            var ctrl = rootController.viewControllers[page] as! ViewController
             ctrl.viewWillDisplay()
         }
 
@@ -55,6 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()
+        
+        
+        
+        
         return true
     }
 
