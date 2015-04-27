@@ -12,6 +12,7 @@
 		D92449ED1ACD1F5E005D1AB7 /* FlipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92449EC1ACD1F5E005D1AB7 /* FlipCell.swift */; };
 		D98A1B811ACD420900FB4635 /* PreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A1B801ACD420900FB4635 /* PreviewController.swift */; };
 		D98A1B831ACD496D00FB4635 /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A1B821ACD496D00FB4635 /* PreviewCell.swift */; };
+		D99648EE1AEE003200183CE0 /* HUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99648ED1AEE003200183CE0 /* HUDHelper.swift */; };
 		D9A0BE551AD6A518008109A1 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A0BE541AD6A518008109A1 /* GoogleMobileAds.framework */; };
 		D9F183D91AD660F800F3B084 /* ESImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F183D61AD660F800F3B084 /* ESImageViewController.m */; };
 		D9F183DA1AD660F800F3B084 /* ESModalImageViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F183D81AD660F800F3B084 /* ESModalImageViewAnimationController.m */; };
@@ -55,6 +56,7 @@
 		D92449EC1ACD1F5E005D1AB7 /* FlipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipCell.swift; sourceTree = "<group>"; };
 		D98A1B801ACD420900FB4635 /* PreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewController.swift; sourceTree = "<group>"; };
 		D98A1B821ACD496D00FB4635 /* PreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
+		D99648ED1AEE003200183CE0 /* HUDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDHelper.swift; sourceTree = "<group>"; };
 		D9A0BE541AD6A518008109A1 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Moko/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D9F183D41AD660F800F3B084 /* ESImageViewController-Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ESImageViewController-Internals.h"; sourceTree = "<group>"; };
 		D9F183D51AD660F800F3B084 /* ESImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESImageViewController.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				D91E83B11ACA8EBF0055B974 /* PaserHelper.swift */,
 				D91E83B41ACABEC90055B974 /* Network.swift */,
+				D99648ED1AEE003200183CE0 /* HUDHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,7 +309,7 @@
 				TargetAttributes = {
 					D9F76C561ACA748D007C92CB = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = T7QMM3BWHF;
+						DevelopmentTeam = GW7ZRB8ABG;
 					};
 					D9F76C6B1ACA748D007C92CB = {
 						CreatedOnToolsVersion = 6.2;
@@ -394,6 +397,7 @@
 				D9F183D91AD660F800F3B084 /* ESImageViewController.m in Sources */,
 				D98A1B831ACD496D00FB4635 /* PreviewCell.swift in Sources */,
 				D98A1B811ACD420900FB4635 /* PreviewController.swift in Sources */,
+				D99648EE1AEE003200183CE0 /* HUDHelper.swift in Sources */,
 				D9F76C5F1ACA748D007C92CB /* ViewController.swift in Sources */,
 				D92449ED1ACD1F5E005D1AB7 /* FlipCell.swift in Sources */,
 				D9F76C841ACA7645007C92CB /* MenuController.swift in Sources */,
@@ -527,7 +531,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: HAO WANG (V323EUAYL3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jiabin Li (7BJKV25ZMB)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Moko/Library",
@@ -551,7 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jiabin Li (GW7ZRB8ABG)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jiabin Li (GW7ZRB8ABG)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

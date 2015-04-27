@@ -33,6 +33,10 @@ class PreviewController: UIViewController ,UICollectionViewDataSource,UICollecti
     func request(){
         PaserHelper.getHtmlNodes("\(path)",parser: Constants.parserString.previewParser, sucessBlock: { (respondData, state) -> () in
             println(respondData)
+            if state != 0{
+                HUDHelper.shareInstance().showNetworkErrorAlertWithMsg("网络连接错误")
+                return
+            }
             self.resultArray.removeAll(keepCapacity: false)
             var array = respondData as! [TFHppleElement]
             self.resultArray+=array

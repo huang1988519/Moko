@@ -70,6 +70,10 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
 
         page = 1
         PaserHelper.getHtmlNodes("\(path)\(page).html", parser: Constants.parserString.indexParser) { (respondData, state) -> () in
+            if state != 0{
+                HUDHelper.shareInstance().showNetworkErrorAlertWithMsg("网络连接错误")
+                return
+            }
             self.collectionView.pullToRefreshView.stopAnimating()
             self.resultArray.removeAll(keepCapacity: true)
             
